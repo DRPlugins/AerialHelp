@@ -12,20 +12,7 @@ class Main extends PluginBase Implements Listener{
         $this->getServer()->getPluginManager()->registerEvents($this,$this);
     }
 	
-	public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
-        switch ($command){
-            case 'ifhelp':
-			if(strtolower($args[0]) == "aerialhelp") {
-						if(!isset($args[1]) || $args[1] == 1) {
-							$sender->sendMessage(TextFormat::RED . "InfniteHelp Command List 1/2;" . TextFormat::BLUE . 
-									"");
-							return true;
-						}
-						if($args[1] == 2) {
-							$sender->sendMessage(TextFormat::RED . "InfiniteHelp 2/2;" . TextFormat::BLUE . 
-									"");
-							return true;
-						}
+	public functio
 class Main extends PluginBase Implements Listener{
     
     public function onEnable(){
@@ -34,8 +21,8 @@ class Main extends PluginBase Implements Listener{
 	
 	public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
         switch ($command){
-            case 'ifhelp':
-			if(strtolower($args[0]) == "ifhelp") {
+            case 'aerialhelp':
+			if(strtolower($args[0]) == "aerialhelp") {
 						if(!isset($args[1]) || $args[1] == 1) {
 							$sender->sendMessage(TextFormat::RED . "[AerialHelp] Command List 1/2;" . TextFormat::BLUE . 
 									"\n
