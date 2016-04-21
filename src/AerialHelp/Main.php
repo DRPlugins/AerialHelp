@@ -15,7 +15,7 @@ class Main extends PluginBase Implements Listener{
 	public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
         switch ($command){
             case 'ifhelp':
-			if(strtolower($args[0]) == "ifhelp") {
+			if(strtolower($args[0]) == "aerialhelp") {
 						if(!isset($args[1]) || $args[1] == 1) {
 							$sender->sendMessage(TextFormat::RED . "InfniteHelp Command List 1/2;" . TextFormat::BLUE . 
 									"");
