@@ -1,0 +1,9 @@
+name: AerialHelp
+author: BoyIsDino & Syntaxious
+description: A PM custom help plugin.
+version: [1.0.0]
+api: [1.14.0]
+main: AerialHelp\Main
+commands:
+  aerialhelp:
+    description: Shows a list of commands.
