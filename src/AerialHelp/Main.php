@@ -10,6 +10,7 @@ class Main extends PluginBase Implements Listener{
     
     public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this,$this);
+        $this->getLogger()->info("[AerialHelp] Enabled");
     }
 	
 	public functio
@@ -25,7 +26,7 @@ class Main extends PluginBase Implements Listener{
 			if(strtolower($args[0]) == "aerialhelp") {
 						if(!isset($args[1]) || $args[1] == 1) {
 							$sender->sendMessage(TextFormat::RED . "[AerialHelp] Command List 1/2;" . TextFormat::BLUE . 
-									"\n
+								       "\n
 									\n
 									\n
 									\n
