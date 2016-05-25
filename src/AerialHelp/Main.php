@@ -2,6 +2,8 @@
 namespace AerialHelp;
 
 use pocketmine\event\Listener;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat as color;
@@ -13,13 +15,6 @@ class Main extends PluginBase Implements Listener{
     public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this,$this);
         $this->getLogger()->info("[AerialHelp] Enabled");
-    }
-	
-	public functio
-class Main extends PluginBase Implements Listener{
-    
-    public function onEnable(){
-        $this->getServer()->getPluginManager()->registerEvents($this,$this);
     }
 	
 	public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
